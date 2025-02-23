@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teclus</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #0a0a0a;
+            color: #ffffff;
+            text-align: center;
+        }
+        header {
+            background-color: #1a1a1a;
+            padding: 20px 0;
+            font-size: 24px;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        nav ul li {
+            display: inline;
+        }
+        nav ul li a {
+            color: #ff6600;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #ffffff;
+        }
+        section {
+            padding: 60px 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+        .hero {
+            background: url('hero-image.jpg') no-repeat center center/cover;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 32px;
+            font-weight: bold;
+            color: #ffffff;
+        }
+        .service-card {
+            background: #1a1a1a;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 8px;
+            transition: transform 0.3s;
+        }
+        .service-card:hover {
+            transform: scale(1.05);
+        }
+        footer {
+            background-color: #1a1a1a;
+            padding: 20px;
+            margin-top: 40px;
+        }
+        button {
+            background-color: #ff6600;
+            color: #fff;
+            padding: 12px 24px;
+            border: none;
+            cursor: pointer;
+            font-size: 18px;
+            margin-top: 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #e65c00;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        TECLUS
+    </header>
+    <section id="about">
+        <h2>About Us</h2>
+        <p>We are a web and application development company based in Dhaka, Bangladesh, delivering high-quality services and AI-based products.</p>
+    </section>
+    
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="service-card">Web Development</div>
+        <div class="service-card">Application Development</div>
+        <div class="service-card">AI-Based Web Tools</div>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: contact@teclus.com</p>
+        <p>Phone: +8801XXXXXXXXX</p>
+        <button onclick="showAlert()">Get in Touch</button>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Teclus LLC. All rights reserved.</p>
+    </footer>
+    
+    <script>
+        function showAlert() {
+            alert("Thank you for reaching out to Teclus! We will get back to you soon.");
+        }
+    </script>
+</body>
+</html>
